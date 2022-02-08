@@ -21,7 +21,7 @@ public class Main {
 
         veiculo.acelerar();
         veiculo.abastecer(40);
-        veiculo.abastecer(70);
+        veiculo.abastecer(30);
         veiculo.frear();
         veiculo.frear();
         veiculo.pintar("Laranja");

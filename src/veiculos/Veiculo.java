@@ -81,10 +81,10 @@ public class Veiculo {
     }
 
     public void abastecer (int qtd){
-        if(qtd>60){
+        if(qtd>60 || this.litroCombustivel+qtd>60){
             System.out.println("Quantidade excede o valor maximo do tanque");
         } else {
-            this.litroCombustivel = qtd;
+            this.litroCombustivel += qtd;
             System.out.println("Abastecido, combustivel atual "+ getLitrosCombustivel()+ "L");
         }
     }
